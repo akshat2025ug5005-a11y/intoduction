@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akshat Goyal</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+/* Layout: single column, left-aligned; section label sits in a left column on desktop and stacks on phones */
+:root{
+  --bg:#F3F6F8; --surface:#FFFFFF; --ink:#0F1E2A; --muted:#566673; --line:#D7E0E6;
+  --accent:#0B7A75; --accent-ink:#FFFFFF; --accent-soft:#DDF1EF;
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0C171F; --surface:#13222C; --ink:#E8F0F4; --muted:#93A6B3; --line:#233642;
+  --accent:#4FD1C5; --accent-ink:#06201E; --accent-soft:#12312F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0C171F; --surface:#13222C; --ink:#E8F0F4; --muted:#93A6B3; --line:#233642;
+  --accent:#4FD1C5; --accent-ink:#06201E; --accent-soft:#12312F; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;
+  padding-block:48px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:52px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.1}
+h1{font-size:clamp(2.6rem,9vw,4.8rem);letter-spacing:-0.02em}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+header{display:flex;flex-direction:column;gap:18px}
+.lede{font-size:1.2rem;max-width:36em;color:var(--muted)}
+.quote{font-family:var(--display);font-size:1.15rem;max-width:30em;border-left:3px solid var(--accent);padding-left:14px}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;text-decoration:none;font-size:.95rem;padding:9px 16px;border-radius:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+section{display:grid;grid-template-columns:170px minmax(0,1fr);gap:12px 32px;border-top:1px solid var(--line);padding-top:24px}
+section>h2{font-size:.95rem;color:var(--muted);font-family:var(--mono);font-weight:400;letter-spacing:.06em;text-transform:uppercase}
+.col{display:flex;flex-direction:column;gap:22px;min-width:0}
+.item{display:flex;flex-direction:column;gap:4px}
+.item h3{font-size:1.25rem}
+.meta{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
+.stats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.stats li{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px}
+.stats b{display:block;font-family:var(--display);font-size:1.5rem;color:var(--accent);line-height:1.2}
+.stats span{font-size:.92rem;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--mono);font-size:.82rem;padding:4px 11px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+.group{display:flex;flex-direction:column;gap:8px}
+.group h3{font-size:1rem;color:var(--muted);font-family:var(--mono);font-weight:400}
+.apps{margin:0;padding-left:1.1em}
+footer{font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);padding-top:20px}
+@media (max-width:640px){section{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Machine Learning Enthusiast · AI Developer · Data Analyst</span>
+    <h1>Akshat Goyal</h1>
+    <p class="lede">B.Tech student in Maths &amp; Computing at IIIT Ranchi. I build intelligent solutions with machine learning, enjoy solving problems, and keep learning modern AI technologies and algorithms.</p>
+    <p class="quote">“The best way to predict the future is to build it with Artificial Intelligence.”</p>
+    <div class="links">
+      <a class="btn main" href="https://github.com/goyalakshat3009" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/akshat-goyal-b363b7380" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://x.com/AkshatGoya65816" target="_blank" rel="noopener">X (Twitter)</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Highlights</h2>
+    <div class="col">
+      <ul class="stats">
+        <li><b>Winner</b><span>Haandix 2026 (BuildX) with Team navX</span></li>
+        <li><b>97.3%</b><span>diagnostic efficiency of my AI Medical Chatbot</span></li>
+        <li><b>15+</b><span>ML web apps built and deployed online</span></li>
+        <li><b>1204</b><span>Codeforces rating (Pupil). LeetCode 1720, CodeChef peak 1410</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="col">
+      <div class="item">
+        <h3>NavX: AI-Based Dead Reckoning App</h3>
+        <span class="meta">Team project · BuildX Haandix 2026 · Winner</span>
+        <p>An AI-based app that tracks position without GPS, built with Team navX. It won the Haandix 2026 hackathon.</p>
+      </div>
+      <div class="item">
+        <h3>AI Medical Chatbot</h3>
+        <span class="meta">Personal project · 2025 · Python, Groq API, ElevenLabs, Gradio</span>
+        <p>A multimodal health assistant that takes voice-recorded symptoms and disease images together, suggests treatments and generates prescriptions. It reaches 97.3% diagnostic efficiency and includes a sound-wave visualisation, all in the browser.</p>
+      </div>
+      <div class="item">
+        <h3>Deployed Machine Learning Apps</h3>
+        <span class="meta">Personal projects · 2026 · Streamlit, Render</span>
+        <p>More than 15 ML web apps, including Fake News Prediction, SMS Spam Detector, Loan Approval, Credit Risk Checker, Credit Card Fraud Detection, Customer Churn, House Price (XGBoost), Wine Quality, Car Price, Heart Disease, Movie Genre Classification and WhatsApp Chat Analyzer.</p>
+      </div>
+      <div class="item">
+        <h3>Deep Learning &amp; Computer Vision Apps</h3>
+        <span class="meta">Personal projects · 2026 · Streamlit, Vercel</span>
+        <p>A Fashion Recommender System, Celebrity Look-alike finder, Body Posture &amp; Hand Gesture detection and Face Mask Detection, all deployed online.</p>
+      </div>
+      <div class="item">
+        <h3>Next Word Predictor (NLP)</h3>
+        <span class="meta">Personal project · 2026</span>
+        <p>A deep learning model that suggests the most likely next word for a given piece of text.</p>
+      </div>
+      <div class="item">
+        <h3>Insurance Premium Prediction</h3>
+        <span class="meta">Personal project · 2026 · Scikit-learn, Pydantic</span>
+        <p>Predicts insurance outcomes from user details, with structured input validation using Pydantic.</p>
+      </div>
+      <div class="item">
+        <h3>Diabetes Prediction System</h3>
+        <span class="meta">Personal project · 2025 · SVM, StandardScaler</span>
+        <p>Predicts whether a patient is diabetic from 7 clinical features, with a full pipeline from preprocessing to real-time single-patient prediction.</p>
+      </div>
+      <div class="item">
+        <h3>Rock vs Mine Prediction (Sonar)</h3>
+        <span class="meta">Personal project · 2025 · Logistic Regression</span>
+        <p>A binary classifier on the UCI Sonar dataset that uses 60 frequency features to tell whether a submarine has detected a rock or an underwater mine.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="col">
+      <div class="group"><h3>Languages</h3>
+        <div class="chips"><span class="chip">Python</span><span class="chip">C</span><span class="chip">C++</span><span class="chip">JavaScript</span><span class="chip">HTML / CSS</span></div></div>
+      <div class="group"><h3>Machine learning</h3>
+        <div class="chips"><span class="chip">Machine Learning</span><span class="chip">Deep Learning</span><span class="chip">NLP</span><span class="chip">Data Analysis</span><span class="chip">Logistic Regression</span><span class="chip">SVM</span><span class="chip">XGBoost</span><span class="chip">Scikit-learn</span><span class="chip">NumPy</span><span class="chip">Pandas</span></div></div>
+      <div class="group"><h3>Tools &amp; backend</h3>
+        <div class="chips"><span class="chip">Gradio</span><span class="chip">Streamlit</span><span class="chip">Groq API</span><span class="chip">ElevenLabs API</span><span class="chip">Node.js</span><span class="chip">FastAPI</span><span class="chip">Docker</span><span class="chip">Pydantic</span><span class="chip">REST APIs</span><span class="chip">Git / GitHub</span></div></div>
+      <div class="group"><h3>Problem solving</h3>
+        <div class="chips"><span class="chip">Data Structures &amp; Algorithms</span><span class="chip">Competitive Programming</span></div>
+        <p>DSA covered: arrays, strings, hashing, two pointers, sliding window, recursion and backtracking, binary search, linked lists, stacks and queues, heaps, trees, tries, segment trees, Fenwick tree, graphs (BFS, DFS, Dijkstra, topological sort, DSU, MST), greedy, dynamic programming, bit manipulation, number theory and combinatorics.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="col">
+      <div class="item"><h3>B.Tech, Maths &amp; Computing</h3><span class="meta">IIIT Ranchi, Jharkhand · 2025 to 2029 · Pursuing</span></div>
+      <div class="item"><h3>Class XII, Science (BSER)</h3><span class="meta">Nirmal Happy Sr. Sec. School · 2024 to 2025 · 89.78%</span></div>
+      <div class="item"><h3>Class X (BSER)</h3><span class="meta">AVN School, Rajasthan · 2023 to 2024 · 91.00%</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Learning &amp; certificates</h2>
+    <div class="col">
+      <div class="item"><h3>Complete ML, DL &amp; NLP</h3><span class="meta">CampusX · 2026</span><p>Regression, classification, ensembles, clustering, deep learning and NLP, applied through 20+ deployed projects.</p></div>
+      <div class="item"><h3>AI/ML Foundations Course</h3><span class="meta">Unstop.ai · 3 months</span><p>Core AI and ML concepts, including algorithms, model training and deployment.</p></div>
+      <div class="item"><h3>GDG Hackathon</h3><span class="meta">GDG &amp; Unstop.ai · 2024</span><p>Took part in a hands-on hackathon on building real-world AI/ML solutions under competition.</p></div>
+      <div class="item"><h3>Backend Development</h3><span class="meta">Self-learning · 2026</span><p>JavaScript, Node.js, FastAPI and Docker.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Beyond code</h2>
+    <div class="col">
+      <p>Strengths: problem-solving, analytical thinking, communication, team collaboration, quick learning, critical thinking and time management. Languages: Hindi and English.</p>
+      <div class="chips"><span class="chip">Badminton</span><span class="chip">Gaming</span><span class="chip">Coding contests</span><span class="chip">Music</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="col">
+      <p>I'm happy to talk about AI, ML projects or hackathons. Message me on LinkedIn or X, or look through my code on GitHub.</p>
+      <div class="links">
+        <a class="btn main" href="https://linkedin.com/in/akshat-goyal-b363b7380" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/goyalakshat3009" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://x.com/AkshatGoya65816" target="_blank" rel="noopener">X (Twitter)</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>Akshat Goyal · IIIT Ranchi · Built with AI assistance.</footer>
+</div>
+
+</body>
+</html>
